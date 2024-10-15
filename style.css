@@ -87,3 +87,15 @@ header{
     object-fit: cover;
     margin-right: 50px; 
 }
+.band{
+   width: 100%;
+   display: flex;
+   margin: auto;
+   justify-content: space-around; 
+   padding: 15px 10px;
+   align-items: center;
+   background: rgb(221, 199, 199);
+   box-shadow: 0 80px 32px rgba(31, 38,135,.37);
+   backdrop-filter: blur(4px);
+   margin-bottom: 100px;
+}
