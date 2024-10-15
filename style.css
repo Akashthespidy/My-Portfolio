@@ -1,0 +1,88 @@
+body{
+    background-color: #f4370cdd;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+header{
+
+}
+#navbar{
+    margin: 0 auto;
+    width: 80%;
+    height:10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#logo_container {
+    height: 50px; /* Set height for the logo */
+    width: 50px; /* Set width for the logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure the image is fully contained */
+    border-radius: 50%; /* Makes the container round */
+    position: absolute; /* Position to the left if needed */
+    left: 10px; /* Adjust distance from the left edge */
+}
+
+/* Styling the image inside */
+#logo_container img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Maintain container height */
+    object-fit: cover; /* Scale image to cover without distortion */
+}
+
+#navitems{
+    display: flex;
+    width: 500px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+   
+}
+/* Main Header */
+#main-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    color: aliceblue;
+    position: relative;
+    height: 60vh; 
+}
+#main-header .left {
+    position: absolute;
+    width: 40%;
+    top: 100px;
+    left: 10%;
+    height: 100%;
+    color: white;
+}
+#main-header .left .Bigtext {
+   font-size: 50px;
+   color: white;
+}
+.gradient-text{
+    color: rgb(39, 200, 168);
+}
+#main-header .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -1;
+    position: relative;
+    
+}
+
+#main-header .right img {
+    width: 450px; 
+    height: 400px; 
+    object-fit: cover;
+    margin-right: 50px; 
+}
