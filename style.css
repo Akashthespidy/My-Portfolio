@@ -68,7 +68,7 @@ header{
    font-weight: 300;
 }
 .gradient-text{
-    color: rgb(47, 224, 12);
+    color: rgb(12, 210, 224);
 }
 #main-header .right {
     flex: 1;
@@ -219,4 +219,42 @@ header{
 .info p {
     margin: 0;
     line-height: 1.6;
+}
+.CV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    height: 100vh;
+    padding-top: 10px;
+    margin: 0;
+}
+.bigt {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn1 {
+    margin-top: 20px;
+}
+
+.btn1 a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn10 {
+    background-color: #4CAF50; /* Green background */
+}
+
+.btn20 {
+    background-color: #2196F3; /* Blue background */
 }
