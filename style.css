@@ -108,3 +108,24 @@ header{
     width: 25px;
     display: block;
 }
+.choose-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.sect{
+    font-size: 40px;
+    font-family: 900;
+}
+.section-des{
+    width: 500px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.choose-section .image-crousel{
+    
+}
