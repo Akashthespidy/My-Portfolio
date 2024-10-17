@@ -68,7 +68,7 @@ header{
    font-weight: 300;
 }
 .gradient-text{
-    color: rgb(39, 200, 168);
+    color: rgb(47, 224, 12);
 }
 #main-header .right {
     flex: 1;
@@ -126,6 +126,97 @@ header{
     font-size: 20px;
     font-weight: 100;
 }
-.choose-section .image-crousel{
+.choose-section .image-carousel{
+    display: auto;
+    justify-content: space-between;
+    width: 50;
+    align-items: center;
+    margin-bottom: 50px;
     
+
+}
+ .image-carousel img{
+    height: 250px;
+    width: 400px;
+}
+.buttons{
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    height: 100;
+    width: 100;
+    background-color: rgb(5, 5, 5);
+}
+.btn{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #a91322e2;
+    color: white;
+}
+.discover {
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #a91322e2;
+    border-radius: 10px; 
+    padding: 20px;
+    max-width: 1100px;
+    height: auto;
+    color: white;
+}
+
+.card img {
+    width: 900px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 5px; 
+    mix-blend-mode: normal;
+
+}
+.card .gradient-text{
+    font-size: 40px;
+}
+.Achievments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+     
+}
+.Achievments > div {
+    display: flex;
+    align-items: center;
+    background-color: #a91322e2;
+    border-radius: 10px; 
+    padding: 20px;
+    max-width: 1100px;
+    height: auto;
+    color: white;
+}
+
+.Achievments img {
+    width: 600px; 
+    height: auto;
+    border-radius: 8px;
+    padding-right: 20px;
+}
+
+.Achievments .info {
+    flex: 1;
+    font-size: 16px;
+    color:white ;
+}
+
+.info p {
+    margin: 0;
+    line-height: 1.6;
 }
