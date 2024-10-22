@@ -44,6 +44,9 @@ header{
     font-weight: bold;
    
 }
+#navitems a{
+    color: white;
+}
 /* Main Header */
 #main-header {
     display: flex;
@@ -126,18 +129,24 @@ header{
     font-size: 20px;
     font-weight: 100;
 }
-.choose-section .image-carousel{
-    display: auto;
+.image-carousel {
+    display: flex;
     justify-content: space-between;
-    width: 50;
-    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
     margin-bottom: 50px;
-    
-
 }
- .image-carousel img{
+
+.image-carousel a {
+    color: white; 
+    font-weight: 400;
+    flex: 1 1 30%; /* Make the items responsive */
+    margin: 10px; /* Add some space between items */
+}
+
+.image-carousel img {
     height: 250px;
-    width: 400px;
+    width: 100%; /* Make images responsive */
+    object-fit: cover; /* Ensure proper aspect ratio */
 }
 .buttons{
     align-items: center;
@@ -304,9 +313,135 @@ header{
 .contact-info i {
     margin-right: 8px;
 }
+
 /* Responsive Design */
+@media (max-width: 1024px) {
+    #navbar {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #navitems {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #main-header .left {
+        width: 50%;
+        top: 50px;
+        left: 5%;
+    }
+
+    #main-header .left .Bigtext {
+        font-size: 40px;
+    }
+
+    #main-header .right img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .choose-section .image-carousel {
+        flex-direction: column;
+    }
+
+    .image-carousel img {
+        max-width: 90%; /* Ensure it's responsive */
+        margin-bottom: 20px;
+    }
+
+    .band {
+        flex-direction: column;
+        font-size: 16px;
+        transform: none;
+    }
+}
+
 @media (max-width: 768px) {
-    .footer-container {
+    #navbar {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #logo_container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #navitems {
+        width: 100%;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    #main-header .left {
+        width: 100%;
         text-align: center;
+        top: 0;
+        left: 0;
+    }
+
+    #main-header .left .Bigtext {
+        font-size: 30px;
+    }
+
+    #main-header .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .band {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .choose-section .image-carousel img {
+        max-width: 80%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        height: auto;
+    }
+
+    #navitems {
+        font-size: 14px;
+    }
+
+    #main-header .left .Bigtext {
+        font-size: 20px;
+    }
+
+    .band {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .choose-section .image-carousel img {
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .Achievments img {
+        width: 100%;
+    }
+
+    .Achievments > div {
+        flex-direction: column;
     }
 }
