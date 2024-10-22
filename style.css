@@ -20,6 +20,9 @@ header{
     align-items: center;
     color: rgb(250, 221, 221);
 }
+.navitems a:hover {
+    color: rgb(40, 183, 157);
+  }
 #logo_container {
     display: flex;
     align-items: center;
