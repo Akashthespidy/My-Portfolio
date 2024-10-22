@@ -1,5 +1,5 @@
 body{
-    background-color: #a91322e2;
+    background-color: #041a53e2;
     margin: 0;
     padding: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -9,7 +9,7 @@ body{
     
 }
 header{
-
+    display: inline;
 }
 #navbar{
     margin: 0 auto;
@@ -71,7 +71,8 @@ header{
    font-weight: 300;
 }
 .gradient-text{
-    color: rgb(12, 210, 224);
+    color: rgb(40, 183, 157);
+    font-weight: 600;
 }
 #main-header .right {
     flex: 1;
@@ -160,7 +161,7 @@ header{
     text-align: center;
     font-size: 20px;
     font-weight: 900;
-    background-color: #a91322e2;
+    background-color: #2a437ae2;
     color: white;
 }
 .discover {
@@ -172,7 +173,7 @@ header{
 .card {
     display: flex;
     align-items: center;
-    background-color: #a91322e2;
+    background-color:#2a437ae2;
     border-radius: 10px; 
     padding: 20px;
     max-width: 1100px;
@@ -204,7 +205,7 @@ header{
 .Achievments > div {
     display: flex;
     align-items: center;
-    background-color: #a91322e2;
+    background-color: #2a437ae2;
     border-radius: 10px; 
     padding: 20px;
     max-width: 1100px;
@@ -313,135 +314,99 @@ header{
 .contact-info i {
     margin-right: 8px;
 }
+.info a{
+    color: white
+}
 
-/* Responsive Design */
+/* General Responsive Adjustments */
+@media (max-width: 1200px) {
+    #main-header .left {
+        top: 50px;
+        left: 5%;
+        width: 45%;
+    }
+    .card img {
+        width: 70%;
+    }
+    .choose-section .sect {
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 1024px) {
     #navbar {
         width: 90%;
         height: auto;
         flex-direction: column;
+        text-align: center;
     }
-
-    #navitems {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
     #main-header .left {
-        width: 50%;
-        top: 50px;
-        left: 5%;
+        width: 60%;
+        top: 70px;
     }
-
-    #main-header .left .Bigtext {
-        font-size: 40px;
-    }
-
     #main-header .right img {
-        width: 350px;
-        height: 300px;
+        width: 70%;
+        height: auto;
     }
-
-    .choose-section .image-carousel {
-        flex-direction: column;
+    .card img, .Achievments img {
+        width: 80%;
     }
-
-    .image-carousel img {
-        max-width: 90%; /* Ensure it's responsive */
-        margin-bottom: 20px;
-    }
-
     .band {
-        flex-direction: column;
-        font-size: 16px;
         transform: none;
+        padding: 10px;
+        font-size: 18px;
     }
 }
 
 @media (max-width: 768px) {
-    #navbar {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    #logo_container img {
-        width: 80px;
-        height: 80px;
-    }
-
-    #navitems {
-        width: 100%;
-        flex-direction: column;
-        font-size: 16px;
-    }
-
     #main-header .left {
-        width: 100%;
-        text-align: center;
-        top: 0;
-        left: 0;
+        width: 80%;
+        top: 30px;
     }
-
     #main-header .left .Bigtext {
         font-size: 30px;
     }
-
-    #main-header .right img {
+    .card img, .Achievments img {
         width: 100%;
-        height: auto;
     }
-
     .band {
         font-size: 14px;
-        padding: 10px;
+        padding: 5px;
     }
-
-    .choose-section .image-carousel img {
-        max-width: 80%;
-    }
-
-    .card img {
-        width: 100%;
-        height: auto;
+    .choose-section .sect {
+        font-size: 28px;
     }
 }
 
 @media (max-width: 480px) {
     #navbar {
-        height: auto;
+        flex-direction: column;
+        text-align: center;
     }
-
+    #logo_container img {
+        width: 60px;
+        height: 60px;
+    }
     #navitems {
         font-size: 14px;
+        flex-direction: column;
+        align-items: center;
     }
-
     #main-header .left .Bigtext {
         font-size: 20px;
     }
-
-    .band {
-        font-size: 12px;
-        padding: 5px;
-    }
-
-    .choose-section .image-carousel img {
+    #main-header .right img {
         width: 100%;
     }
-
     .card {
         flex-direction: column;
+        padding: 10px;
     }
-
-    .card img {
-        width: 100%;
+    .band {
+        padding: 5px;
+        font-size: 12px;
     }
-
-    .Achievments img {
-        width: 100%;
-    }
-
-    .Achievments > div {
-        flex-direction: column;
+    .choose-section .sect {
+        font-size: 24px;
     }
 }
