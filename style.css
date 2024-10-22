@@ -18,21 +18,18 @@ header{
     color: rgb(250, 221, 221);
 }
 #logo_container {
-    height: 50px; /* Set height for the logo */
-    width: 50px; /* Set width for the logo */
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Ensure the image is fully contained */
-    border-radius: 50%; /* Makes the container round */
-    position: absolute; /* Position to the left if needed */
-    left: 10px; /* Adjust distance from the left edge */
+    margin-top: 50px;
 }
 
 #logo_container img {
-    width: 100%; /* Ensure the image fills the container */
-    height: 100%; /* Maintain container height */
-    object-fit: cover; /* Scale image to cover without distortion */
+    width: 100px; 
+    height:100px; 
+    border-radius: 50%; 
+    margin-right: 15px; 
+    object-fit: cover;
+    border: 2px solid #fff;
 }
 
 #navitems{
@@ -257,4 +254,61 @@ header{
 
 .btn20 {
     background-color: #2196F3; /* Blue background */
+}
+/* Basic Footer Styling */
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #2c3e50; /* Fallback color */
+    position: relative;
+    min-height: 200px; /* Ensure the footer has a visible height */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-info ul li a:hover {
+    color: #3498db;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+/* Background Image Option */
+.footer.light-bg {
+    background-image: url('sp.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        text-align: center;
+    }
 }
